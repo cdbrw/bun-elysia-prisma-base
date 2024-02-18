@@ -6,13 +6,17 @@ This is a template repo for the base of a Bun server using Elysia for the API an
 You can [deploy on Railway](https://railway.app/template/ospb5B?referralCode=codebrew) or simply [create a new repo](https://github.com/thecodebrew/bun-elysia-prisma-base/generate) using this template.
 
 ## Development
-Start a Docker container for the Postgres database
+Install dependencies
+```bash
+bun install
 ```
+Start a Docker container for the Postgres database
+```bash
 docker run --name dev-postgres -p 5432:5432 -e POSTGRES_PASSWORD=12345678 -d postgres
 ```
 
 Add the `DATABASE_URL` env variable to a _.env_ file
-```
+```dotenv
 DATABASE_URL="postgresql://postgres:12345678@localhost:5432/postgres?schema=public"
 ```
 
