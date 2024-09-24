@@ -10,6 +10,7 @@
     "elysia": "latest"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
     "bun-types": "latest",
     "prisma": "^5.9.1"
   },
